@@ -1,0 +1,59 @@
+<ul class="breadcrumb">
+    <li><span>Home</span></li>
+    <li><a href="#">Funcionarios</a></li>
+</ul>
+
+<section class="container flex-end">
+    <div class="item"><button mat-button (click)="onClickExtrato()">Extrato</button><button mat-button (click)="onClickFuncionario()">Funcionários</button></div>
+</section>
+
+<mat-card>
+    <mat-card-title id="cardheader">Filtros</mat-card-title>
+    <mat-form-field appearance="fill">
+        <mat-label>Matrícula</mat-label>
+        <input matInput>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+        <mat-label>Nome</mat-label>
+        <input matInput>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+        <mat-label>Função</mat-label>
+        <input matInput>
+    </mat-form-field>
+    <section id=sectPesquisar><button mat-button id="pesquisar" (click)="onPesquisar()">Pesquisar</button></section>
+</mat-card>
+
+<mat-card>
+    <mat-card-title id="cardheader">Resultados</mat-card-title>
+    <table mat-table [dataSource]="funcionarios" class="mat-elevation-z8">
+        <!-- Position Column -->
+        <ng-container matColumnDef="id">
+            <th mat-header-cell *matHeaderCellDef> ID </th>
+            <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+        </ng-container>
+
+        <!-- Name Column -->
+        <ng-container matColumnDef="nome">
+            <th mat-header-cell *matHeaderCellDef> NOME </th>
+            <td mat-cell *matCellDef="let element"> {{element.nome}} </td>
+        </ng-container>
+
+        <!-- Weight Column -->
+        <ng-container matColumnDef="matricula">
+            <th mat-header-cell *matHeaderCellDef> MATRÍCULA </th>
+            <td mat-cell *matCellDef="let element"> {{element.matricula}} </td>
+        </ng-container>
+
+        <!-- Symbol Column -->
+        <ng-container matColumnDef="funcao">
+            <th mat-header-cell *matHeaderCellDef> FUNÇÃO </th>
+            <td mat-cell *matCellDef="let element"> {{element.funcao}} </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+</mat-card>

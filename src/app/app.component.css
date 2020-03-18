@@ -1,0 +1,22 @@
+mat-toolbar {
+    background-color: #5c2483;
+    width: 100%;
+    display: relative;
+}
+#titlesoma{
+    color: #e84e0f;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+
+#login{
+    color:white;
+    justify-content: flex-end!important;
+    
+}
+
+.mat-toolbar, .mat-toolbar h1, .mat-toolbar h2, .mat-toolbar h3, .mat-toolbar h4, .mat-toolbar h5, .mat-toolbar h6 {
+    justify-content: space-between;
+}
+

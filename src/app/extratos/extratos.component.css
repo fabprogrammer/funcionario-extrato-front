@@ -1,0 +1,79 @@
+mat-form-field{
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.mat-card{
+  margin-top: 20px;
+}
+
+.mat-form-field {
+  text-align: center;
+}
+
+table {
+  width: 100%;
+}
+
+ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+  background-color: #eee;
+  margin-top: 0px;
+}
+ul.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+}
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+ul.breadcrumb li a {
+  color: #0275d8;
+  text-decoration: none;
+}
+ul.breadcrumb li a:hover {
+  color: #01447e;
+  text-decoration: underline;
+}
+
+.mat-button{
+  margin-right: 10px;
+  margin-top: 10px;
+  background-color: #e84e0f!important;
+}
+
+.mat-button, .mat-icon-button, .mat-stroked-button{
+  color:white!important;
+}
+
+
+.flex-end {
+justify-content: flex-end;
+}
+
+.container {
+margin: 0 ;
+display: flex;
+}
+
+#pesquisar{
+  margin-left: 550px;
+}
+
+#flex-container{
+display: flex;
+justify-content: center;
+}
+
+
+
+.mat-card-content{
+margin-bottom: 0; 
+justify-content: center;
+}
+
+
+
